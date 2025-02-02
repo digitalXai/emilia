@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Emilia ❤️</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            Haii Emilia, first of all, sorry for being the way I am. I am still willing to do whatever it takes to have you back. Would you honor me and be my Valentine's date on the 14th?
+        </div>
+        <div class="buttons">
+            <button id="yesBtn" class="btn btn-yes">Yes</button>
+            <button id="noBtn" class="btn btn-no">No</button>
+        </div>
+    </div>
+
+    <div class="music-controls">
+        <button id="musicBtn" class="music-btn">
+            <i class="fas fa-play"></i>
+        </button>
+        <div class="song-info">No. 1 Party Anthem - Arctic Monkeys</div>
+    </div>
+
+    <audio id="backgroundMusic" preload="auto" loop>
+        <source src="{{ url_for('static', filename='music/no1_party_anthem.mp3') }}" type="audio/mpeg">
+    </audio>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/hearts.js') }}"></script>
+</body>
+</html>
